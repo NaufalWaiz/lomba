@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    
+ </link>
+
+<link rel="stylesheet" href="transition.css">
+  </head>
+  <body>
+   
+    <div class="container-page">
+       
+    
+      <div class="judul">
+        
+        <div class="judultext">
+          
+           <a href="index.html"><img src="assets/ayosehatlogo.png" alt="" height="120px" width="auto"></a>
+           <div class="judulteks">
+            <h1>KUNYIT</h1>
+            <br>
+            <h1 style="margin-top: -25px; font-style: italic; font-weight: 100;">Curcuma longa / Turmeric
+            </h1>
+           </div>
+         
+           
+             
+      
+        </div>
+     
+        
+      </div>
+
+      <div class="isipage">
+        <div class="pagetext">
+          <p>
+           <b>  Kunyit atau kunir</b> (Curcuma longa Linn. syn. Curcuma domestica Val.), adalah termasuk salah satu tanaman rempah-rempah dan obat asli dari wilayah Asia Tenggara. Tanaman ini kemudian mengalami penyebaran ke daerah Malaysia, Indonesia, Australia bahkan Afrika.
+
+           </p>
+        </div>
+        <div class="foto">
+          <img src="assets/kunyitt.png" alt="" / height="200px" width="auto" style="border-radius: 3%;">
+
+        </div>
+
+      </div>
+      <hr style="margin-left: 3%;" color="#000;">
+
+      <div class="resolpe">
+        <div class="resolve">
+          <h1 class="resolvetitle">Apa Sih Manfaat Kunyit?</h1>
+          <div class="resolvetext reveal">
+            <img src="assets/dayatahan.png"  height="180px" width="245px">
+            <div class="textresolve">
+              <h1> Meningkatkan Daya Tahan Tubuh</h1>
+            <p>
+              Kandungan <b> Paradol dan Gingerol</b> di dalam jahe mampu melawan bakteri penyebab infeksi saluran pencernaan, seperti Salmonella typhi (Penyebab demam tifoid/tifus) dan Escherichia coli (penyebab diare).
+            </p>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="resolve reveal">
+          <hr style="margin-left: 3%;" color="#000;">
+          <div class="resolvetext">
+              <div class="textresolve2">
+                  <h1>Menangkal Bakteri</h1>
+                <p>
+                  Kandungan gingerol di dalam jahe diketahui dapat mempercepat proses pemecahan dan pembakaran lemak, menghambat penyerapan lemak berlebih, serta mengendalikan nafsu makan sehingga berat badan menjadi lebih terjaga.
+                </p>
+                </div>
+            <img src="assets/bakteri.png" alt="" class="resolvepict" height="200px" width="auto">
+            
+          </div>
+        </div>
+      
+         
+           
+        <div class="resolve reveal">
+          <hr style="margin-left: 3%;" color="#000;">
+          <div class="resolvetext">
+            <img src="assets/kanker.png" alt="" height="180px" width="245px">
+            <div class="textresolve">
+              <h1>Mengobati Metastasis Kanker</h1>
+            <p>
+              Untuk mengobati metastasis kanker, Kita bisa menggunakan kunyit putih. Hal ini disebabkan adanya kandungan kurkumin yang dapat menghambat pertumbuhan dan penyebaran kanker.
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+    
+    </div>
+    <!-- Footer -->
+    
+  </body>
+
+  <script>
+    
+     window.addEventListener("scroll", reveal);
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    
+  </script>
+  
+</html>

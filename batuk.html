@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    
+ </link>
+
+<link rel="stylesheet" href="transition.css">
+  </head>
+  <body>
+   
+    <div class="container-page">
+       
+    
+      <div class="judul">
+        
+        <div class="judultext">
+          
+           <a href="index.html"><img src="assets/ayosehatlogo.png" alt="" height="120px" width="auto"></a>
+           <div class="judulteks">
+            <h1>BATUK BERDAHAK</h1>
+            <br>
+            <h1 style="margin-top: -25px; font-style: italic; font-weight: 100;">Productive Cough</h1>
+           </div>
+         
+           
+             
+      
+        </div>
+     
+        
+      </div>
+
+      <div class="isipage">
+        <div class="pagetext">
+          <p>
+                  <b> Batuk berdahak</b>  adalah batuk yang disertai dengan lendir kental. Lendir
+             ini bisa berwarna bening, kuning, hijau, atau mengandung darah. Batuk
+             berdahak umumnya disebabkan oleh <b>
+              infeksi virus atau bakteri
+             </b> pada
+             saluran pernapasan. <br>
+             Agar
+             kuman dan benda asing tersebut lebih mudah keluar, saluran pernapasan
+             akan menghasilkan lendir. Lendir yang bercampur dengan kuman akan
+             dikeluarkan oleh tubuh dalam bentuk dahak.
+           </p>
+        </div>
+        <div class="foto">
+          <img src="images/asset/botak-removebg-preview.png" alt="" / height="300px" width="300px" style="border-radius: 3%;">
+        </div>
+
+      </div>
+      <hr style="margin-left: 3%;" color="#000;">
+
+
+      <div class="resolpe">
+        <div class="resolve">
+          <h1 class="resolvetitle">Bagaimana Cara Mengatasinya?</h1>
+          <div class="resolvetext reveal">
+            <img src="assets/jahe.png" alt="" height="180px" width="245px">
+            <div class="textresolve">
+              <h1>Jahe</h1>
+            <p>
+              Jahe dapat mengurangi iritasi, kekeringan, dan lendir di tenggorokan. Cara membuatnya, rebus beberapa ruas jahe selama 10-15 menit. Lalu tuang dalam cangkir dan nikmati selagi hangat.
+            </p>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="resolve reveal">
+          <hr style="margin-left: 3%;" color="#000;">
+          <div class="resolvetext">
+            <img src="assets/teh.png" alt="" height="180px" width="250px">
+            <div class="textresolve">
+              <h1>Konsumsi minuman hangat</h1>
+            <p>
+              Minuman hangat dapat membantu meredakan kekeringan di tenggorokan, yang menjadi penyebab batuk. Cara ini juga membantu mengencerkan lendir dan membantu melegakan tenggorokan.
+            </p>
+            </div>
+          </div>
+        </div>
+      
+         
+           
+        <div class="resolve reveal">
+          <hr style="margin-left: 3%;" color="#000;">
+          <div class="resolvetext">
+            <img src="assets/madu.png" alt="" height="180px" width="245px">
+            <div class="textresolve">
+              <h1>Jeruk nipis dengan kecap atau madu</h1>
+            <p>
+              Kandungan minyak atsiri pada jeruk nipis dapat melemaskan otot-otot pada saluran pernapasan. 
+              Selain itu, larutan tersebut juga berkhasiat mengatasi suara serak akibat batuk. Penggunaan kecap juga dapat diganti dengan madu untuk memberikan rasa manis pada perasan jeruk nipis yang sangat asam.
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+    
+    
+    </div>
+    <!-- Footer -->
+    
+  </body>
+
+  <script>
+    
+     window.addEventListener("scroll", reveal);
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    
+  </script>
+  
+</html>

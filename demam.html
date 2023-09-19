@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    
+ </link>
+
+<link rel="stylesheet" href="transition.css">
+  </head>
+  <body>
+   
+    <div class="container-page">
+       
+    
+      <div class="judul">
+        
+        <div class="judultext">
+          
+           <a href="index.html"><img src="assets/ayosehatlogo.png" alt="" height="120px" width="auto"></a>
+           <div class="judulteks">
+            <h1>DEMAM</h1>
+            <br>
+            <h1 style="margin-top: -25px; font-style: italic; font-weight: 100;">Febris </h1>
+           </div>
+         
+           
+             
+      
+        </div>
+     
+        
+      </div>
+
+      <div class="isipage">
+        <div class="pagetext">
+          <p> <b>Demam</b>  adalah meningkatnya suhu tubuh hingga lebih dari 38 derajat Celcius. Kondisi ini bisa menandakan adanya penyakit atau kondisi tertentu di dalam tubuh<br>
+            Demam umumnya terjadi sebagai reaksi dari sistem imun dalam melawan infeksi kuman penyebab penyakit. Beberapa penyakit yang sering menyebabkan demam adalah flu, radang tenggorokan, dan infeksi saluran kemih.
+           </p>
+        </div>
+        <div class="foto">
+          <img src="assets/demem.png" alt="" / height="300px" width="auto" style="border-radius: 3%;">
+        </div>
+
+      </div>
+      <hr style="margin-left: 3%;" color="#000;">
+
+      <div class="resolve">
+        <h1 class="resolvetitle">Bagaimana Cara Mengatasinya?</h1>
+        <div class="resolvetext reveal">
+          <img src="assets/kompres.png" alt="" height="180px" width="245px">
+          <div class="textresolve">
+            <h1>Kompres hangat</h1>
+          <p>
+            Saat terkena demam, segera tempelkan kompres hangat di dahi. Hal ini bisa membantu menormalkan suhu tubuh secara bertahap dan membuat Anda merasa lebih nyaman.
+            Begini cara melakukan kompres hangat yang tepat untuk jadi obat demam
+          </p>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="resolpe">
+        <div class="resolve reveal">
+          <hr style="margin-left: 3%;" color="#000;">
+          <div class="resolvetext">
+            <img src="assets/basil.png" alt="" height="180px" width="250px">
+            <div class="textresolve">
+              <h1>Daun basil</h1>
+            <p>
+              Daun ini sering diandalkan sebagai ramuan alami untuk membantu mempersingkat masa demam. Berbagai sumber menyebutkan bahwa daun basil memiliki efektivitas yang tidak kalah dengan berbagai jenis antibiotik untuk mengusir bakteri penyebab demam.
+            </p>
+            </div>
+          </div>
+        </div>
+      
+         
+           
+        <div class="resolve reveal">
+          <hr style="margin-left: 3%;" color="#000;">
+          <div class="resolvetext">
+            <img src="assets/cukaapel.png" alt="" height="180px" width="245px">
+            <div class="textresolve">
+              <h1>Cuka Apel</h1>
+            <p>
+              Kandungan asam dalam cuka apel dapat membantu mengeluarkan suhu panas dari dalam tubuh, sehingga bisa jadi obat demam sehingga suhu bisa turun secara bertahap.
+              Selain itu, obat panas demam ini mengandung banyak mineral yang dapat memenuhi kebutuhan mineral tubuh akibat demam. 
+            </p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+     
+    
+    
+    </div>
+    <!-- Footer -->
+    
+  </body>
+
+  <script>
+    
+     window.addEventListener("scroll", reveal);
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    
+  </script>
+  
+</html>

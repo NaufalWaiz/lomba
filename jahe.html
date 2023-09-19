@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    
+ </link>
+
+<link rel="stylesheet" href="transition.css">
+  </head>
+  <body>
+   
+    <div class="container-page">
+       
+    
+      <div class="judul">
+        
+        <div class="judultext">
+          
+           <a href="index.html"><img src="assets/ayosehatlogo.png" alt="" height="120px" width="auto"></a>
+           <div class="judulteks">
+            <h1>JAHE</h1>
+            <br>
+            <h1 style="margin-top: -25px; font-style: italic; font-weight: 100;">Zingiber officinale</h1>
+           </div>
+         
+           
+             
+      
+        </div>
+     
+        
+      </div>
+
+      <div class="isipage">
+        <div class="pagetext">
+          <p>
+                  <b> Jahe</b>  merupakan tanaman obat berupa tumbuhan rumpun berbatang semu. Jahe berasal dari Asia Pasifik yang tersebar dari India sampai Cina. Oleh karena itu kedua bangsa ini disebut-sebut sebagai bangsa yang pertama kali memanfaatkan jahe terutama sebagai bahan minuman, bumbu masak dan obat-obatan tradisional.
+           
+           </p>
+        </div>
+        <div class="foto">
+          <img src="assets/jahe.png" alt="" / height="200px" width="auto" style="border-radius: 3%;">
+
+        </div>
+
+      </div>
+      <hr style="margin-left: 3%;" color="#000;">
+
+      <div class="resolpe">
+        <div class="resolve">
+          <h1 class="resolvetitle">Apa Sih Manfaat Jahe?</h1>
+          <div class="resolvetext reveal">
+            <img src="assets/sakitperut.png"  height="180px" width="245px">
+            <div class="textresolve">
+              <h1> Meredakan  Gangguan Sistem Pencernaan</h1>
+            <p>
+              Kandungan <b> Paradol dan Gingerol</b> di dalam jahe mampu melawan bakteri penyebab infeksi saluran pencernaan, seperti Salmonella typhi (Penyebab demam tifoid/tifus) dan Escherichia coli (penyebab diare).
+            </p>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="resolve reveal">
+          <hr style="margin-left: 3%;" color="#000;">
+          <div class="resolvetext">
+              <div class="textresolve2">
+                  <h1>Menjaga Berat Badan Ideal</h1>
+                <p>
+                  Kandungan gingerol di dalam jahe diketahui dapat mempercepat proses pemecahan dan pembakaran lemak, menghambat penyerapan lemak berlebih, serta mengendalikan nafsu makan sehingga berat badan menjadi lebih terjaga.
+                </p>
+                </div>
+            <img src="assets/beratbadan.png" alt="" class="resolvepict" height="200px" width="auto">
+            
+          </div>
+        </div>
+      
+         
+           
+        <div class="resolve reveal">
+          <hr style="margin-left: 3%;" color="#000;">
+          <div class="resolvetext">
+            <img src="assets/alzheimer.png" alt="" height="180px" width="245px">
+            <div class="textresolve">
+              <h1>Menurunkan risiko penyakit Alzheimer</h1>
+            <p>
+              Gingerol dan shogaol di dalam jahe merupakan dua senyawa yang bersifat antioksidan sehingga mampu mengurangi risiko penurunan fungsi otak akibat proses penuaan pada lansia.
+            </p>
+            </div>
+          </div>
+        </div>
+  
+      
+      </div>
+      
+  
+    </div>
+    <!-- Footer -->
+    
+  </body>
+
+  <script>
+    
+     window.addEventListener("scroll", reveal);
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    
+  </script>
+  
+</html>

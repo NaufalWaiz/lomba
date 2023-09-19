@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(35deg, #fff, #b2e194);
+}
+
+/* Section buat card */
+.cardsection {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.cardtext {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  text-align: center;
+  position: relative;
+}
+.container-kartu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+.container-kartu .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  height: 300px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.container-kartu .card:hover {
+  height: 400px;
+}
+
+.container-kartu .card .imgBx {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 220px;
+  background: #333;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+.container-kartu .card:hover .imgBx {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+.container-kartu .card .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.container-kartu .card .content {
+  position: absolute;
+  top: 252px;
+  height: 30px;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 30px;
+  text-align: center;
+  transition: 0.5s;
+}
+.container-kartu .card:hover .content {
+  height: 250px;
+  top: 150px;
+}
+.container-kartu .card .content h2 {
+  font-size: 1.2em;
+  font-weight: 700px;
+  color: #ff3e7f;
+}
+.container-kartu .card .content p {
+  color: #333;
+}
+.container-kartu .card .content a {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff3e7f;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* Section page */
+
+.container-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 2%;
+  margin-left: 4%;
+  flex-wrap: wrap;
+}
+.judul {
+  text-align: center;
+  margin-top: 3%;
+}
+.judultext {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.judulteks {
+  text-align: right;
+}
+.isipage {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 5%;
+  margin-bottom: 7%;
+}
+
+.pagetext {
+  background-color: #add678;
+  margin-right: 25%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 3%;
+  transition: 0.5s ease-out;
+}
+
+.isipage p {
+  margin-bottom: auto;
+  text-align: justify;
+}
+.isipage h1 {
+  width: 150%;
+}
+.foto {
+  margin-right: 5.2%;
+}
+.resolve {
+  position: relative;
+
+  margin-top: 5%;
+}
+.resolve img {
+  transition: all 0.5s ease-in-out;
+}
+.resolve img:hover {
+  transform: rotate(45deg);
+}
+.resolvetitle {
+  text-align: center;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.resolvetext {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+.textresolve {
+  margin-left: 15%;
+  margin-right: 10%;
+  text-align: justify;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.textresolve2 {
+  margin-left: 2%;
+  margin-right: 15%;
+  text-align: justify;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.resolvepict {
+  margin-right: 5%;
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .container-page {
+    margin-left: 0;
+    padding-left: 3%;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .judultext {
+    justify-content: left;
+    text-align: left;
+    font-size: 12px;
+
+    margin-right: 4%;
+  }
+  .judulteks {
+    text-align: left;
+    font-size: 10px;
+  }
+  .isipage {
+    flex-direction: column-reverse;
+  }
+  .pagetext {
+    margin-top: 5%;
+    align-items: center;
+  }
+  .foto {
+    display: flex;
+    margin-top: 7%;
+
+    justify-content: center;
+    max-width: 300px;
+  }
+  .foto img {
+    max-width: 300px;
+    max-height: 150px;
+    align-items: center;
+  }
+  .isipage {
+    max-width: fit-content;
+  }
+  .resolvetitle {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .resolve {
+    display: flex;
+    flex-direction: column;
+  }
+  .resolve img {
+    max-height: 150px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+  }
+  .resolvetext {
+    margin-top: 5%;
+    margin-left: 0;
+    flex-direction: column;
+  }
+  .textresolve {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 2%;
+
+    text-align: justify;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .textresolve h1 {
+    text-align: left;
+    font-size: 24px;
+  }
+  .textresolve2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 2%;
+    text-align: justify;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .resolvepict {
+    margin-right: 0;
+    margin-top: 5%;
+  }
+}
+.resolpe{
+  margin-bottom: 10%;
+}
+/* Footer */

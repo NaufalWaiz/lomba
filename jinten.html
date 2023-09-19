@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    
+ </link>
+
+<link rel="stylesheet" href="transition.css">
+  </head>
+  <body>
+   
+    <div class="container-page">
+       
+    
+      <div class="judul">
+        
+        <div class="judultext">
+          
+           <a href="index.html"><img src="assets/ayosehatlogo.png" alt="" height="120px" width="auto"></a>
+           <div class="judulteks">
+            <h1>JINTEN</h1>
+            <br>
+            <h1 style="margin-top: -25px; font-style: italic; font-weight: 100;">Cuminum cyminum</h1>
+           </div>
+         
+           
+             
+      
+        </div>
+     
+        
+      </div>
+
+      <div class="isipage">
+        <div class="pagetext">
+          <p>
+                  <b> Jinten</b>  merupakan tumbuhan berbunga dari famili Apiaceae yang bersumber dari kawasan Laut Tengah bidang timur hingga India bidang timur. Tanaman ini merupakan tanaman tahunan memiliki bentuk terna dengan batang ramping bercabang dengan tinggi 20-30 cm.
+           
+           </p>
+        </div>
+        <div class="foto">
+          <img src="assets/jinten.jpg" alt="" / height="200px" width="auto" style="border-radius: 3%;">
+
+        </div>
+
+      </div>
+      <hr style="margin-left: 3%;" color="#000;">
+
+      <div class="resolpe">
+        <div class="resolve">
+          <h1 class="resolvetitle">Apa Sih Manfaat Jinten</h1>
+          <div class="resolvetext reveal">
+            <img src="assets/kolestrol.png"  height="180px" width="245px">
+            <div class="textresolve">
+              <h1> Menurunkan kolesterol</h1>
+            <p>
+              Bagi penderita kolesterol tinggi, konsumsi jintan putih bisa menjadi salah satu cara menurunkan kolesterol. Pasalnya, jenis rempah ini tidak mengandung lemak sama sekali dan justru kaya akan serat serta antioksidan yang bisa menurunkan kadar kolesterol jahat dalam tubuh.
+            </p>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="resolve reveal">
+          <hr style="margin-left: 3%;" color="#000;">
+          <div class="resolvetext">
+              <div class="textresolve2">
+                  <h1>Meredakan peradangan</h1>
+                <p>
+                  Efek antiradang jintan putih diperoleh dari senyawa-senyawa aktif yang terkandung di dalamnya, seperti lipopolisakarida dan timokuinon. Senyawa aktif ini dapat mengatasi rasa sakit yang ditimbulkan akibat inflamasi atau peradangan di tubuh.
+                </p>
+                </div>
+            <img src="assets/radang.png" alt="" class="resolvepict" height="200px" width="auto">
+            
+          </div>
+        </div>
+      
+         
+           
+        <div class="resolve reveal">
+          <hr style="margin-left: 3%;" color="#000;">
+          <div class="resolvetext">
+            <img src="assets/diabetes.png" alt="" height="180px" width="245px">
+            <div class="textresolve">
+              <h1>Mencegah diabetes</h1>
+            <p>
+              Jintan putih dipercaya mampu mencegah penyakit diabetes, khususnya diabetes tipe 2. Manfaat ini diperoleh dari senyawa antidiabetes, yaitu polifenol, yang dapat menghambat penyerapan gula ke dalam darah.
+  
+             Serta memiliki indeks glikemik rendah sehingga konsumsinya tidak akan menaikkan kadar gula darah secara drastis.
+            </p>
+            </div>
+          </div>
+        </div>
+  
+      
+      </div>
+      
+   
+    </div>
+    <!-- Footer -->
+    
+  </body>
+
+  <script>
+    
+     window.addEventListener("scroll", reveal);
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    
+  </script>
+  
+</html>
